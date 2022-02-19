@@ -1,0 +1,240 @@
+:root {
+  /* CSS HEX */
+  --black: #000000ff;
+  --smoky-black: #101010ff;
+  --eerie-black: #202020ff;
+  --silver: #bfbfbfff;
+  --gainsboro: #dfdfdfff;
+  --white: #ffffffff;
+  --thistle: #d9c0d9ff;
+  --african-violet: #b380b3ff;
+  --plum: #8d408dff;
+  --midnight: #660066ff;
+
+  --ff-primary: "Roboto Mono", monospace;
+
+  --spacing: 0.1rem;
+  --transition: all 0.3s linear;
+}
+
+html {
+  font-size: 13px;
+  font-family: var(--ff-primary);
+  scroll-behavior: smooth;
+  background: var(--eerie-black);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--african-violet);
+  letter-spacing: var(--spacing);
+}
+
+a:hover {
+  color: var(--thistle);
+}
+
+img {
+  border-radius: 8px;
+}
+
+nav {
+  background: linear-gradient(var(--eerie-black) 90%, transparent);
+}
+
+/* Settings when screen width < 800px */
+.nav-header {
+  color: var(--african-violet);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header-logo {
+  font-size: 2rem;
+}
+
+.nav-center {
+    font-size: 1.25rem;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  color: var(--african-violet);
+}
+
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+/* Links hidden by default*/
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* Links shown*/
+.show-links {
+  height: 10rem;
+}
+
+.section-intro {
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.section-intro-title {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.section-intro-content {
+  color: var(--gainsboro);
+  font-size: 1.5rem;
+}
+
+.section-content {
+  /*background: red;*/
+  width: 95%;
+  margin-left: 2.5%;
+  height: auto;
+  text-align: left;
+}
+
+.language-toggle{
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  display: flex;
+}
+
+.language-all:hover, .python-toggle:hover, .cs-toggle:hover {
+  color: var(--white);
+}
+
+.language-content {
+  height: 0;
+  overflow: hidden;
+}
+
+.show-language-content {
+  height: auto;
+}
+
+.language-all, .python-toggle, .cs-toggle {
+  font: var(--ff-primary);
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: flex;
+  color: var(--gainsboro);
+}
+
+.section-python, .section-cs {
+  height: auto;
+  /*background: pink;*/
+  clear: both;
+}
+
+.hide-content {
+  height: 0;
+  overflow: hidden;
+}
+
+.section-page {
+  /*background: blue;*/
+}
+
+.section-page-title {
+  font-size: 2rem;
+}
+
+.section-page-content {
+  float: left;
+  /*background: green;*/
+  width: 50%;
+  height: auto;
+}
+
+.section-page-image {
+  overflow: hidden;
+  /*background-color: gold;*/
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.section-page-image-wide, .section-page-image-thin {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.horizontal-bar {
+  margin-top: 1rem;
+  height: 0.25rem;
+  width: 100%;
+  background-color: var(--african-violet);
+  border-radius: 5px;
+}
+
+/* Settings when screen width > 800px */
+@media screen and (min-width: 65rem){
+  html {
+    font-size: 15px;
+  }
+
+  .nav-center {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 2vw;
+  }
+
+  .section-page-content {
+    width: 40%;
+  }
+
+  .section-page-image {
+    width: 60%;
+  }
+
+  .section-page-image-wide, .section-page-image-thin {
+    max-width: 30%;
+    margin-left: 2.5%;
+  }
+}
