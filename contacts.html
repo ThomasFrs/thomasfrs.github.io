@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- style -->
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
   <title>Contacts</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,12 +44,12 @@
 <main>
   <section>
     <div class="section-intro">
-      <h1 class="section-intro-title">Contacts</h1>
-      <a href="mailto: thomasfrs44@gmail.com"><p class="section-intro-content">GMail</p></a>
-      <a href="https://github.com/ThomasFrs" target="_blank"><p class="section-intro-content">GitHub</p></a>
-      <a href="https://thomasfrs.itch.io/" target="_blank"><p class="section-intro-content">Itch.io</p></a>
-      <a href="https://www.codewars.com/users/AnneWorldEater" target="_blank"><p class="section-intro-content">Codewars</p></a>
-      <p style="font-size: 1.25em;" class="section-intro-content">
+      <h1 class="section-intro-title" data-aos="fade-up">Contacts</h1>
+      <a href="mailto: thomasfrs44@gmail.com"><p class="section-intro-content" data-aos="fade-up" data-aos-delay="50">GMail</p></a>
+      <a href="https://github.com/ThomasFrs" target="_blank"><p class="section-intro-content" data-aos="fade-up" data-aos-delay="100">GitHub</p></a>
+      <a href="https://thomasfrs.itch.io/" target="_blank"><p class="section-intro-content" data-aos="fade-up" data-aos-delay="150">Itch.io</p></a>
+      <a href="https://www.codewars.com/users/AnneWorldEater" target="_blank"><p class="section-intro-content" data-aos="fade-up" data-aos-delay="200">Codewars</p></a>
+      <p style="font-size: 1.25em;" class="section-intro-content" data-aos="fade-up" data-aos-delay="250">
         Website created on: 18/02/2022<br>
         Last modified on: 21/02/2022
       </p>
@@ -57,6 +58,10 @@
 </main>
 
 <!-- javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="script.js"></script>
 
 </body>

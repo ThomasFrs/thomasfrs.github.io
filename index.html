@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- style -->
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
   <title>ThomasFrs</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,12 +44,14 @@
 <main>
   <section>
     <div class="section-intro">
-      <h1 class="section-intro-title">Hey :D</h1>
-      <p class="section-intro-content">
+      <h1 class="section-intro-title" data-aos="fade-up">Hey :D</h1>
+      <p class="section-intro-content" data-aos="fade-up" data-aos-delay="100">
         Welcome to my personal website!<br>
         Here are referenced my favorite fully-released or in-the-making<br>
         games, softwares and side-projects.<br>
-        Feel free to use any of the available resources.<br><br>
+        Feel free to use any of the available resources.
+      </p>
+      <p class="section-intro-content" data-aos="fade-up" data-aos-delay="200">
         - ThomasFrs
       </p>
     </div>
@@ -56,6 +59,10 @@
 </main>
 
 <!-- javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="script.js"></script>
 
 </body>

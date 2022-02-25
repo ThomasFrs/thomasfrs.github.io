@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- style -->
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
   <title>Side-Projects</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,8 +44,8 @@
 <main>
   <section>
     <div class="section-intro">
-      <h1 class="section-intro-title">Side-Projects</h1>
-      <p class="section-intro-content">
+      <h1 class="section-intro-title" data-aos="fade-right">Side-Projects</h1>
+      <p class="section-intro-content" data-aos="fade-right" data-aos-delay="50">
         Besides making games and softwares, I also like coding<br>
         for the sake of learning and bettering myself.<br>
         Here you can find my ongoing Side-Projects which<br>
@@ -57,7 +58,7 @@
   <section>
     <!-- language selection -->
     <div class="section-content">
-      <div class="section-language-selection">
+      <div class="section-language-selection" data-aos="fade-right" data-aos-delay="100">
         <button class="language-toggle">
           <a><i style="font-family: Roboto Mono; font-style: normal;">>Select language</i></a>
         </button>
@@ -69,7 +70,7 @@
       <div class="section-page">
 
         <!-- Euler Project -->
-        <div class="section-python">
+        <div class="section-python"  data-aos="fade-right" data-aos-delay="150">
           <div class="horizontal-bar"></div>
           <a href="https://github.com/ThomasFrs/project-euler" target="_blank" class="section-page-title">Project Euler</a>
           <div>
@@ -96,7 +97,7 @@
         </div>
 
         <!-- Codewars -->
-        <div class="section-python">
+        <div class="section-python"  data-aos="fade-right" data-aos-delay="200">
           <div class="horizontal-bar"></div>
           <a href="https://github.com/ThomasFrs/codewars" target="_blank" class="section-page-title">Codewars</a>
           <div>
@@ -128,6 +129,10 @@
 </main>
 
 <!-- javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="script.js"></script>
 
 </body>
