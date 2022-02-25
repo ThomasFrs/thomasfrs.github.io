@@ -198,6 +198,10 @@ nav {
   border-radius: 5px;
 }
 
+.highlight {
+  color: var(--african-violet);
+}
+
 /* Settings when screen width > 800px */
 @media screen and (min-width: 65rem){
   html {
